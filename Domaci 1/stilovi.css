@@ -1,0 +1,36 @@
+
+h1 {
+	color: white;
+}
+img {
+	width: 294px;
+    height: 300px;
+}
+#drzac {
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-around;
+}
+.kockica {
+    text-align: center;
+    width: 300px;
+    height: 65px;
+	background-color: black;
+}
+.slicice {
+    width: 294px;
+    height: 300px;
+    border: 3px solid black;
+}
+#rezultat {
+    top: 330px;
+    position: relative;
+    width: 60%;
+    margin: 0 20%;
+    height: 65px;
+    background-color: black;
+}
+#izjava {
+    text-align: center;
+    padding-top: 20px;
+}
