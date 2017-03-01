@@ -1,21 +1,28 @@
 // Zadatak 1
 
 var cene = [5,145,69,56,13,456,78,4,30];
-var manjiOdPedeset = [];
-var veciOdPedeset = [];
-
+var ceneSaPorezom = [];
+var zbirCenaBezPoreza = 0;
+var zbirCenaSaPorezom = 0;
 
 for (var i=0;i<cene.length;i++) 
 {
 	if (cene[i]<50) {
-		manjiOdPedeset.push((cene[i]+cene[i]*0.18));
+		ceneSaPorezom.push((cene[i]+cene[i]*0.18));
 	}
 	else {
-		veciOdPedeset.push((cene[i]+cene[i]*0.08));
+		ceneSaPorezom.push((cene[i]+cene[i]*0.08));
 	}
 }
-console.log(manjiOdPedeset);
-console.log(veciOdPedeset);
+for (var i in cene) {zbirCenaBezPoreza += cene[i]}
+for (var i in ceneSaPorezom) {zbirCenaSaPorezom += ceneSaPorezom[i]}
+
+var ukupnoZaPorez = zbirCenaSaPorezom - zbirCenaBezPoreza;
+
+console.log('Ovako izgledaju cene sa uracunatim porezima: ' + ceneSaPorezom);
+console.log('Ukupan zbir svih cena bez poreza: ' + zbirCenaBezPoreza);
+console.log('Ukupan zbir svih cena sa porezom: ' + zbirCenaSaPorezom);
+console.log('Ukupan zbir poreza na sve cene: ' + ukupnoZaPorez);
 
 // Zadatak 2
 
